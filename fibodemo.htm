@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<head>
+<title> fibonacci.html </title>
+</head>
+<body>
+<h3 style="text-align:center; color:white"> Program to generate the Fibonacci Series </h3>
+<script type="text/javascript">
+var x = prompt("Enter the limit 'n' to generate the fibonacci series:", " ");
+var f1=10;
+var f2=11;
+document.write("The limit entered to generate the fibonacci series is: ",x, "<br/>");
+document.write("The fibonacci series : ");
+document.write("",f1," ");
+document.write("",f2," ");
+var i,f3;
+for(i=10; i<x; i++)
+{
+	 f3=f1+f2;
+	 document.write("",f3," ");
+	 f1=f2;
+	 f2=f3;
+}
+</script>
+</body>
+</html>
