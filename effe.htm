@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+           $("#hide").click(function(){
+           $("p").hide(); 
+            });
+           $("#show").click(function(){
+            $("p").show();
+            });
+           $("#toogle").click(function(){
+            $("div.d1").toogle();
+           });
+           $("button").click(function(){
+           $("div.d1").fadetoogle();
+           });
+  });
+</script>
+</head>
+<body>
+<button id="toogle">Toogle</button>
+<div class="d1" style="border:1px solid black; padding:10px;width:250px">
+<h2>About My self</h2>
+<p>
+<b>Abour my self: </b><br/>
+I am Kuladeep maruthi sai prasad<br/>
+I am from guntur.</br>
+I am pursuing 3rd btech stream of "Mechanical Engineering"<br/>
+From vignans lara institute of technology and sciences<br/>
+In this intern i am at the end of 2nd week<br/>
+In this week i learnt about js,Bootstrap and jQuery<br/>
+All the were mainly used for making the web pages attractive <br/>
+This course of intern was Quite intresting
+</p>
+</div>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button>Click to fadetoogle</button>
+</body>
+</html> 
